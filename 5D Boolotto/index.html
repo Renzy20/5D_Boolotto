@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction System</h1>
+        <div class="input-section">
+            <label for="period">Enter Period:</label>
+            <input type="text" id="period" placeholder="Enter last 3 digits of the period draw">
+        </div>
+        <div class="input-section">
+            <label for="sums">Enter 6 Past Sums:</label>
+            <input type="text" id="sums" placeholder="e.g. 22 23 25 34 21 10">
+        </div>
+        <button id="submit-btn">Add Prediction</button>
+
+        <table id="predictions-table">
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Predicted Sum</th>
+                    <th>High/Low</th>
+                    <th>Odd/Even</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Predictions will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
